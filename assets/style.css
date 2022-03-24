@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@500&family=Righteous&display=swap");
+
+body {
+  background-color: #171717;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+.category-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-container button {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #0a0a0a85;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  width: 45vh;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem rgb(8 8 8 / 75%);
+}
+
+.category-container button:hover {
+  background-color: #33333385;
+  cursor: pointer;
+}
+
+.media-container {
+  padding: 10px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #0a0a0aab;
+  border-radius: 25px;
+}
+
+.media-container .card {
+  margin-top: 25px;
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem rgb(8 8 8 / 92%);
+  background-color: #161616;
+  color: white;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.media-container .card img {
+  max-height: 100%;
+}
+
+.media-container .card .info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 0 0 25px;
+  bottom: -1%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  /* padding: 30px; */
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+
+.media-container button {
+  font-family: "Righteous", cursive;
+  font-size: 18px;
+  border-radius: 0px;
+  background-color: #0a0a0a85;
+  border: none;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+}
+
+.media-container button:hover {
+  background-color: #0c0c0c;
+  cursor: pointer;
+}
+
+.media-container .card label {
+  padding: 15px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.title-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-container label {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.show-details {
+  padding: 20px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #0a0a0aab;
+  color: white;
+  border-radius: 25px;
+  margin: 30px auto;
+  box-shadow: rgb(8 8 8 / 75%) 0.1rem 0.1rem 0.4rem 0.2rem;
+  width: 50vh;
+}
+
+.show-details img {
+  height: 200px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.show-details button {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #0a0a0a85;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  width: 45vh;
+  box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem rgb(8 8 8 / 75%);
+}
+
+.show-details p {
+  width: 80%;
+}
+
+.show-details button:hover {
+  background-color: #33333385;
+  cursor: pointer;
+}

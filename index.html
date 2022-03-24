@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- Category menu -->
+    <div class="category-container">
+      <button class="typeCategory" onclick="changeView('movies')">Movies</button>
+      <button class="typeCategory" onclick="changeView('anime')">Anime</button>
+      <button class="typeCategory" onclick="changeView('shows')">TV Show</button>
+    </div>
+    <!-- Media List -->
+    <div class="title-container">
+      <label class="title">Here is my favourtie list of media 🍿</label>
+    </div>
+    <div class="media-container">
+      <!-- Movies -->
+      <div id="moviesList" style="display: flex">
+        <div class="card">
+          <img src="./assets/images/interstellar.jpeg" alt="" srcset="" />
+          <div class="info">
+            <label>Interstaller 🚀</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/theDarkKnight.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Dark Knight 🦇</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/inception.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Interstaller 🤯</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+      </div>
+      <!-- Tv Shows -->
+      <div id="showsList" style="display: flex">
+        <div class="card">
+          <img src="./assets/images/sherlock.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Sherlock 👮‍♂️</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/breakingBad.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Breaking Bad 🧪</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/dark.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Dark 🔏</label>
+            <button onclick="viewDetails('interstaller')">View</button>
+          </div>
+        </div>
+      </div>
+      <!-- Anime -->
+      <div id="animeList" style="display: flex">
+        <div class="card">
+          <img src="./assets/images/aot.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Attack on titan 👑</label>
+            <button onclick="viewDetails('aot')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/deathnote.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Deathnote 📝</label>
+            <button onclick="viewDetails('deathnote')">View</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/demon.jpg" alt="" srcset="" />
+          <div class="info">
+            <label>Demon Slayer 👿</label>
+            <button onclick="viewDetails('demon')">View</button>
+          </div>
+        </div>
+      </div>
+      <!-- End of media -->
+    </div>
+    <div class="show-details" id="infoContainer" style="display: none">
+      <h2 id="detail-title">Media titile</h2>
+      <img id="detail-img" src="./assets/images/" alt="" />
+      <p id="detail-info">Media info</p>
+      <button>Close this window</button>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
